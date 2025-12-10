@@ -55,6 +55,11 @@ left join employee_privileges
 on employees.id = employee_privileges.employee_id;
 -- WHERE employee_id IS NULL;
 
+SELECT id, company, last_name, first_name, job_title, employee_id, privilege_id 
+FROM employees 
+left join employee_privileges
+on id = employee_id;
+
 -- --------------- right
 SELECT employees.id, company, last_name, first_name, job_title, employee_id, privilege_id 
 FROM employees
@@ -71,6 +76,11 @@ SELECT *
 FROM hr.employees
 join departments
 on employees.department_id = departments.department_id;
+
+SELECT * 
+FROM hr.employees
+join departments
+USING(department_id);
 
 -- left
 SELECT * 
