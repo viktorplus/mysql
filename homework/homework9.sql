@@ -45,7 +45,7 @@ ORDER BY purchase_order_id, product_id;
 
 -- 4. Посчитайте количество заказов по дате получения и posted_to_inventory Если оно превышает 1 то выведите '>1' в противном случае '=1'
 -- Выведите purchase_order_id, date_received и вычисленный столбец
-SELECT DISTINCT date_received, posted_to_inventory,
+SELECT DISTINCT purchase_order_id, date_received,
 CASE 
 WHEN  COUNT(purchase_order_id) OVER (PARTITION BY date_received, posted_to_inventory) > 1 THEN '>1'
 ELSE '=1'
