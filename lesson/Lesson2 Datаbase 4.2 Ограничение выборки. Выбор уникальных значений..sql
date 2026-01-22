@@ -1,3 +1,5 @@
+-- Datаbase 4.2: Ограничение выборки. Выбор уникальных значений.
+
 -- -- 1. Выведите список всех товаров из таблицы products, у которых цена (standarcLcost) находится в диапазоне от 10 до 20 единиц.
 USE northwind;
 -- SELECT * FROM products WHERE `standard_cost` BETWEEN 10 and 20;

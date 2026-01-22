@@ -1,3 +1,6 @@
+-- Datаbase 1.2: Оператор WHERE. Специальное значение NULL
+
+
 -- SELECT 'Good morning';
 -- SELECT 'Good ';
 
