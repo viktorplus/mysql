@@ -239,3 +239,5 @@ DELIMITER ;
 
 CALL get_year_salary(4, @annual);
 SELECT @annual AS annual_salary;
+
+
